@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS personalizado -->
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#sobre">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo da Página -->
+    <main class="container my-5">
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="mb-5">
+            <h2 class="text-primary">Sobre Mim</h2>
+            <p>Olá! Sou um desenvolvedor web apaixonado por criar soluções que ajudam as pessoas. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos.</p>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="mb-5">
+            <h2 class="text-primary">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Descrição do projeto 1.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Descrição do projeto 2.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Descrição do projeto 3.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2 class="text-primary">Contato</h2>
+            <p>Você pode me encontrar nas redes sociais ou enviar um e-mail para contato@meusite.com.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="year"></span> Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
